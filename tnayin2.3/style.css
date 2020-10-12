@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    background-color: rgb(89, 189, 255);
+    height: 277px;
+    width: 400px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: black;
+}
+.ALL{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
