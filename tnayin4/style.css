@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(./img/img.jpeg);
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.wrapper {
+    width: 400px;
+    height: 420px;
+    color: #000;
+    top: 50%;
+    left: 50%;
+    padding: 60px 30px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    box-shadow: 8px 8px 50px #000;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 8%;
+}
+.wrapper input {
+    width: 100%;
+    margin: 20px;
+}
+.wrapper input[type="text"],
+ .wrapper input[type="password"] {
+     border: none;
+     border-bottom: 1px solid rgb(134, 126, 126);
+     background: transparent;
+     outline: none;
+     height: 30px;
+     font-size: 16px;
+     opacity: 1;
+     color: rgb(0, 0, 0);
+     position: relative;
+     right: 20px;
+    
+
+}
+.wrapper input[type=submit] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #f6648b;
+    transition: 0.2s ease-in;
+    position: relative;
+    right: 20px;
+
+}
+.wrapper input[type=submit]:hover {
+    cursor: pointer;
+    transform: scale(0.95);
+
+}
+.socials {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    
+
+}
+.fa {
+    margin-left: 50px;
+}
+p {
+    font-size: 15px;
+    position: relative;
+    bottom: 70px;
+    color: white;
+    left: 30px;
+}
+.wrapper input[type="checkbox"] {
+    position: relative;
+    left: 80px;
+    bottom: 20px;
+}
