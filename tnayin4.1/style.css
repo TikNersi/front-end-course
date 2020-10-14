@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+.container {
+  width: 377px;
+  height: 381px;
+  background-color: rgb(19, 2, 29);
+  border-radius: 50px;
+  position: relative;
+}
+.container div {
+  height: 120px;
+  width: 120px;
+  box-shadow: -1px 12px 3px 2px #0000006e;
+  
+}
+.box1 {
+  background-color: rgb(241, 241, 14);
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  border-radius: 5px;
+  z-index: 4;
+}
+.box2 {
+  background-color: tomato;
+  position: absolute;
+  left: 110px;
+  top: 110px;
+  z-index: 3;
+  border-radius: 5px;
+}
+.box3 {
+  background-color: rgb(56, 240, 56);
+  position: absolute;
+  left: 160px;
+  top: 160px;
+  z-index: 2;
+  border-radius: 5px;
+}
+.box4 {
+  background-color: rgb(45, 45, 155);
+  position: absolute;
+  top: 210px;
+  left: 210px;
+  z-index: 1;
+  border-radius: 5px;
+}
