@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+}
+:root {
+  --box-size: 150px;
+  --anim-dur: 1s;
+}
+.container {
+  width: 800px;
+  height: 470px;
+  background: linear-gradient(45deg, #1446ffbf, #0eea00);
+  display: inline-block;
+  transform: translate(65%, 55%);
+}
+@media (max-width: 1000px) {
+  .container {
+    width: 100vw;
+  }
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  border-bottom: 150px solid rgb(45, 195, 206);
+  animation-name: erankyun;
+  animation-duration: var(--anim-dur);
+  animation-timing-function: ease-in-out;
+  transform-origin: left;
+}
+.circle {
+  height: var(--box-size);
+  width: var(--box-size);
+  background-color: rgb(231, 52, 52);
+  border-radius: 50%;
+  order: -1;
+  animation-name: klor;
+  animation-duration: var(--anim-dur);
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+.square {
+  height: var(--box-size);
+  width: var(--box-size);
+  background-color: rgb(64, 231, 64);
+  animation-name: qarakusi;
+  animation-duration: var(--anim-dur);
+  animation-timing-function: ease-in-out;
+  
+  
+}
+.ALL {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 140px;
+  justify-content: center;
+  position: relative;
+  transform: translate(-40px, 123px);
+  
+}
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    transform: translateY(50px);
+    font-size: 60px;
+}
+@keyframes klor {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateX(40px);
+    
+  }
+}
+
+@keyframes erankyun {
+    0% {
+    opacity: 1;
+    transform: rotate(-45deg);
+    perspective-origin:left;
+    }
+    100%{
+     opacity: 1;
+     transform: rotate(0deg);
+     perspective-origin:left;
+    }
+}
+@keyframes qarakusi {
+    0% {
+        opacity: 0.3;
+        transform: scale(0.8);
+        transform: translate(-30px, -30px);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+        transform: translate(0);
+    }
+}
